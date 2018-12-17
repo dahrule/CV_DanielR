@@ -1,0 +1,189 @@
+h2{
+  text-align:center;
+  margin-top:30px;
+}
+
+.lead{
+  text-align: center;
+  padding-top: 10px;
+  margin: 0 ;
+}
+
+h3{
+  margin:20px 0;
+  color: #66BFBF;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h4{
+  font-size: 1rem;
+
+}
+
+section{
+  padding-top:30px;
+}
+
+footer{
+  background-color: #434242;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.social-icon{
+ margin: auto 5px;
+}
+
+.copyright{
+  font-style: italic;
+  color:#22A39F;
+  font-size: 1rem;
+  margin-top:20px;
+}
+#home{
+  text-align:center;
+  padding-bottom:100px;
+  background-color:black;
+}
+
+/* @media {
+  #profile .col-md-4{
+    text-align: center;
+  }
+} */
+
+.car-img
+{
+  width: auto;
+  height: auto;
+
+}
+
+.container-fluid{
+  padding:2% 25% 3% 25%;
+}
+
+.interest-img{
+margin:0 10px 15px;
+}
+
+.btn {
+  background: #11CDD4;
+  background-image: -webkit-linear-gradient(top, #11CDD4, #11999D);
+  background-image: -moz-linear-gradient(top, #11CDD4, #11999D);
+  background-image: -ms-linear-gradient(top, #11CDD4, #11999D);
+  background-image: -o-linear-gradient(top, #11CDD4, #11999D);
+  background-image: linear-gradient(to bottom, #11CDD4, #11999D);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30E3CB;
+  background-image: -webkit-linear-gradient(top, #30E3CB, #2BC4AD);
+  background-image: -moz-linear-gradient(top, #30E3CB, #2BC4AD);
+  background-image: -ms-linear-gradient(top, #30E3CB, #2BC4AD);
+  background-image: -o-linear-gradient(top, #30E3CB, #2BC4AD);
+  background-image: linear-gradient(to bottom, #30E3CB, #2BC4AD);
+  text-decoration: none;
+}
+
+
+#profile{
+
+}
+
+.round-img{
+  border-radius: 50%;
+  border-style:none;
+  width: inherit;
+  height:inherit;
+}
+
+.interests-container{
+  margin:80px auto  auto 30px;
+}
+
+.carousel-inner{
+  /* width:300px;
+  height:150px; */
+}
+.carousel-item{
+
+}
+
+#experiences{
+  background-color: #f9eea3;
+
+}
+.row{
+  margin-bottom: 20px;
+}
+
+.title-experience{
+  display: block;
+}
+
+.attachment-experience{
+  font-size: 0.9rem;
+  font-style:italic;
+}
+
+.experience-details{
+  display: block;
+  margin-top:6px;
+  color: #22A39F;
+  font-size: 0.9rem;
+  font-style: normal;
+}
+
+.title-experience{
+  padding-top: 10px;
+}
+
+.col-md-4{
+  padding:0 15px;
+}
+
+a{
+  color: #22A39F;
+}
+
+#skills{
+
+}
+
+.no-bullets{
+  list-style-type: none;
+  /* margin: 0px; */
+  padding: 0px;
+}
+
+.ability-title{
+
+}
+
+.ability-score{
+  float: right;
+}
+
+#interests{
+
+}
+
+#contact{
+  background-color: #434242;
+  text-align: center;
+  padding:0 0 10px 0;
+}
+
+.contact-h2{
+  color: white;
+  margin-bottom: 40px;
+}
