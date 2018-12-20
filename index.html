@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -16,15 +16,16 @@
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Merriweather|Montez|Montserrat|Sacramento" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
 
     <!-- Fontawesome Icons/icons8.com -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <a href="https://icons8.com/icon/89300/oculus-rift-filled">Oculus Rift Filled icon by Icons8</a>
+    <a href="https://icons8.com/icon/89300/oculus-rift-filled"></a>
   </head>
 
   <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-light fixed-top navbar-expand-lg navbar-dark bg-dark ">
+    <!-- <nav class="navbar navbar-light fixed-top navbar-expand-lg navbar-dark bg-dark ">
 
        <a class="navbar-brand brand-name" href="#home"> <img class="brand-logo" src="images/favicon.ico" alt="">ANIEL <span></span></a>
 
@@ -48,14 +49,35 @@
                 </li>
             </ul>
         </div>
-    </nav>
+    </nav> -->
+
+    <nav class="navbar navbar-default fixed" id="navbar-example" role="navigation">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#home">Home</a></li>
+              <li><a href="#profile">Profile</a></li>
+              <li><a href="#experiences">Experiences</a></li>
+              <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </nav>
 
     <!-- Home -->
     <section id="home">
-
-        <!-- <h1>I´m Daniel</h1>
-        <h2>a programmer</h2>
-        <h2>& <br> nature enthusiast</h2> -->
+      <img class="brand-logo" src="images/favicon.ico" alt="">ANIEL</img>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -82,22 +104,7 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
-
-
     </section>
-
-    <!-- Home -->
-    <!-- <section id="home">
-      <div class="container-fluid">
-        <a name="home-section"></a>
-        <img class="top-cloud" src="images/cloud.png" alt="">
-        <h1>I´m Daniel</h1>
-        <h2>a programmer</h2>
-        <h2>& <br> nature enthusiast</h2>
-        <img class="bottom-cloud" src="images/cloud.png" alt="">
-        <img src="images/mountain.png" alt="">
-      </div>
-    </section> -->
 
     <!-- Profile -->
     <section id="profile">
@@ -113,13 +120,15 @@
               </p>
             </div>
           <div class="col-md-4 text-center">
-            <img class="round-img" src="images/Yo_formal.jpg" alt="Daniel photo" width="246" height="246">
+            <img class="profile-img" src="images/Yo_formal.jpg" alt="Daniel photo" width="246" height="246">
             <h3>Details</h3>
-            <p>
+            <p class="details">
             			<strong>Name:</strong><br>
             			Daniel Ruiz Leyva<br>
             			<strong>Age:</strong><br>
-            			30 years<br>
+                  <div class="digital">
+                    <span class="years">0</span> y : <span class="months">0</span> m : <span class="days">0</span> d<br>
+                  </div>
             			<strong>Location:</strong><br>
             			Morelia, Mexico
             </p>
@@ -127,10 +136,10 @@
           <div class="col-md-4">
             <h3>Interests</h3>
             <ul class="no-bullets">
-            <li><img class="interest-img" src="images\icons8-oculus-rift-filled-50.png" alt="">V.R.</li>
-            <li><img class="interest-img" src="images\icons8-cycling-mountain-bike-filled-50.png" alt="">Cycling</li>
-            <li><img class="interest-img" src="images\icons8-alps-filled-50.png" alt="">Hiking</li>
-            <li><img class="interest-img" src="images\icons8-scuba-mask-filled-50.png" alt="">SCUBA</li>
+            <li><button class="profile-button vr"><img class="interest-img" src="images\icons8-oculus-rift-filled-50.png" alt=""></button>V.R.</li>
+            <li><button class="profile-button cycling"><img class="interest-img" src="images\icons8-cycling-mountain-bike-filled-50.png" alt=""></button>Cycling</li>
+            <li><button class="profile-button hiking"><img class="interest-img" src="images\icons8-alps-filled-50.png" alt=""></button>Hiking</li>
+            <li><button class="profile-button scuba"><img class="interest-img" src="images\icons8-scuba-mask-filled-50.png" alt=""></button>SCUBA</li>
             <li><img class="interest-img" src="images\icons8-3d-model-filled-50.png" alt="">3D</li>
             </ul>
               </p>
@@ -145,7 +154,7 @@
       <div class="container-fluid">
         <hr>
         <h3>Education</h3>
-        <div class="row">
+          <div class="row">
           <div class="col-md-4">
             <h4><strong>University of Nottingham</strong></h4>
             <p class="experience-period">
@@ -173,7 +182,7 @@
             </p>
           </div>
         </div>
-        <div class="row">
+          <div class="row">
           <div class="col-md-4">
             <h4><strong>Univ. Michoacana de San Nicolas de Hidalgo</strong></h4>
             <p class="experience-period">
@@ -187,7 +196,10 @@
                 The education gave me a comprehensive vision of the broad field of biological sciences and helped me develop analytical thinking.
                 I gained practical experience in data processing and analysis using scripting languages; building an evaluating simple mathematical models of biological phenomena;
                 climbing trees using rappel equipment; scuba diving and coral reef sampling techniques; and in applying standard techniques used in a molecular biology laboratory.
-                <br><span class="attachment-experience"><strong>Thesis title (forest hidrology):</strong> My project was about characterizing microclimate variables along the height of a pine-oak forest canopy. To achieve this, an improvised datalogger system with a network of vertical distributed sensors was designed and built to be deployed inside the forest. The latter required learning tree climbing techniques to access the canopy."Vertical profile of air temperature and relative humidity inside the canopy of a pine-oak forest south of Cuitzeo basin."</span>
+                <br><span class="attachment-experience"><strong>Thesis (forest hidrology):</strong> My project was about characterizing microclimate variables along the height of a pine-oak forest canopy.
+                  To achieve this, an improvised datalogger system with a network of vertical distributed sensors was designed and built to be deployed inside the forest. The latter required learning tree
+                  climbing techniques to access the canopy.</span>
+                  <!-- <span>"Vertical profile of air temperature and relative humidity inside the canopy of a pine-oak forest south of Cuitzeo basin."</span> -->
               </span>
               <span class="experience-details">
                 <span class="fas fa-map-marker-alt"></span>
@@ -402,13 +414,14 @@
             <p>
               <strong>Part-time - Indoor Cycling Instructor</strong>
               <span class="title-experience">
+                I have worked as spinning instructor occasionally over the years.
               </span>
               <span class="experience-details">
                 <span class="fas fa-map-marker-alt"></span>
                 <span class="location">Morelia, Mexico</span>
-                <span class="seperator">|</span>
-                <span class="link">
-                  <span class="fas fa-link"></span>
+                <!-- <span class="seperator">|</span>
+                <span class="link"> -->
+                  <!-- <span class="fas fa-link"></span> -->
                   <a href="https://www.padi.com/" target="_blank"></a>
 					      </span>
               </span>
@@ -511,7 +524,7 @@
         <hr>
         <h3>Languages</h3>
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6 col-sm-12">
             <ul class="no-bullets">
               <li>
                 <span class="ability-title">Spanish (mother tongue)</span>
@@ -523,7 +536,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 col-sm-12">
             <ul class="no-bullets">
               <li>
                 <span class="ability-title">French (survivable)</span>
@@ -539,7 +552,14 @@
       </div>
     </section>
 
-    <!-- Proyects -->
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+        <div class="container-fluid">
+          <hr>
+
+        </div>
+    </section>
 
 
     <!-- Contact -->
@@ -563,6 +583,10 @@
     </footer>
 
 
+
+    <!-- //jQuery & javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js" charset="utf-8"></script>
 
     <!-- Bootstrap:carousel-interactivity -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

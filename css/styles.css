@@ -13,6 +13,7 @@ h3{
   margin:20px 0;
   color: #66BFBF;
   font-family: 'Montserrat', sans-serif;
+  display:inline-block;
 }
 
 h4{
@@ -72,7 +73,24 @@ footer{
 margin:0 10px 15px;
 }
 
-.btn {
+.profile-button{
+  margin-bottom: 10px;
+  margin-right: 5px;
+  padding:0 5px;
+  height:60px;
+}
+
+.profile-button:hover{
+  border-top:5px;
+}
+
+.pressed{
+  border-top:5px;
+  background-color:#66BFBF;
+}
+
+
+ .btn {
   background: #11CDD4;
   background-image: -webkit-linear-gradient(top, #11CDD4, #11999D);
   background-image: -moz-linear-gradient(top, #11CDD4, #11999D);
@@ -104,7 +122,12 @@ margin:0 10px 15px;
 
 }
 
-.round-img{
+.digital{
+  font-family: 'Orbitron', sans-serif;
+}
+
+
+.profile-img{
   border-radius: 50%;
   border-style:none;
   width: inherit;
@@ -148,6 +171,30 @@ margin:0 10px 15px;
   font-style: normal;
 }
 
+.details{
+  margin:0;
+}
+
+.oculus{
+  background-image: url("images/icons8-oculus-rift-filled-50.png");
+}
+ .vr-btn{
+
+  outline: none;
+  /* border: 10px solid #404B69; */
+  font-size: 2rem;
+  font-family: 'Arvo', cursive;
+  line-height: 2;
+  font-weight: 900;
+  /* color: #DA0463; */
+  /* text-shadow: 3px 0 #DBEDF3; */
+  border-radius: 15px;
+  /* display: inline-block; */
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  /* margin: 10px; */
+ }
 .title-experience{
   padding-top: 10px;
 }
@@ -178,8 +225,9 @@ a{
   float: right;
 }
 
-#interests{
-
+#projects{
+  background-color: #f9eea3;
+  height:500px;
 }
 
 #contact{
@@ -192,3 +240,20 @@ a{
   color: white;
   margin-bottom: 40px;
 }
+
+
+
+.navbar  { border: 0px; background-color: #222222; position: absolute; top: 100%; right: 5%; width: 110px; z-index: 999; }
+.navbar, .navbar-collapse {padding: 0px;max-height: none;}
+.navbar, .navbar-nav { float: none; }
+.navbar-nav { margin: 0px; }
+.navbar .nav > li { display: block; float: none; height: 80px; }
+.navbar .nav > li a { display: block;  height: 80px; text-align: center; padding-top: 30px; font-weight: 600; color: #FFFFFF; }
+.navbar .nav > li a:hover, .navbar .nav > li a:focus { color: #999999; }
+.navbar-default, .navbar-nav > .active > a, .navbar-default, .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus { background: #22A39F; color: #FFFFFF; }
+.navbar-default, .navbar-toggle:hover, .icon-bar,
+.navbar-default, .navbar-toggle:focus, .icon-bar { background: #222222; }
+
+.fixed, .navbar  { position: fixed; top: 60px; }
+
+.jumbotron .scroll-down:hover .glyphicon { padding-top: 25px; }
