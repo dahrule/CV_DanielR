@@ -1,6 +1,7 @@
 h2{
   text-align:center;
   margin-top:30px;
+  font-size: 2.5rem;
 }
 
 .lead{
@@ -9,6 +10,8 @@ h2{
   margin: 0 ;
 }
 
+
+
 h3{
   margin:20px 0;
   color: #66BFBF;
@@ -16,8 +19,15 @@ h3{
   display:inline-block;
 }
 
+h3.brand{
+  color: white;
+  text-align:left;
+}
+
 h4{
-  font-size: 1rem;
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 10px;
 
 }
 
@@ -164,11 +174,16 @@ margin:0 10px 15px;
 }
 
 .experience-details{
-  display: block;
+  display: inline-block;
   margin-top:6px;
   color: #22A39F;
   font-size: 0.9rem;
   font-style: normal;
+}
+
+#experiences button {
+    background-color: Transparent;
+    border: none;
 }
 
 .details{
@@ -215,6 +230,7 @@ a{
   list-style-type: none;
   /* margin: 0px; */
   padding: 0px;
+  margin: 0px;
 }
 
 .ability-title{
@@ -241,6 +257,22 @@ a{
   margin-bottom: 40px;
 }
 
+.hidden { display: none; }
+
+@media (max-width: 600px){
+
+  .navbar  { left: 0px; width: 100%; }
+	.navbar .nav > li { height: 60px; }
+	.navbar .nav > li a { height: 60px; text-align: center; padding-top: 20px; font-weight: 600; color: #FFFFFF; }
+
+	.fixed .navbar { top: 0px; }
+
+	.container { padding: 60px 20px; min-width: 280px; }
+
+
+	#profile .row * { text-align: center; }
+}
+
 
 
 .navbar  { border: 0px; background-color: #222222; position: absolute; top: 100%; right: 5%; width: 110px; z-index: 999; }
@@ -253,6 +285,8 @@ a{
 .navbar-default, .navbar-nav > .active > a, .navbar-default, .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus { background: #22A39F; color: #FFFFFF; }
 .navbar-default, .navbar-toggle:hover, .icon-bar,
 .navbar-default, .navbar-toggle:focus, .icon-bar { background: #222222; }
+
+
 
 .fixed, .navbar  { position: fixed; top: 60px; }
 

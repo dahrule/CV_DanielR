@@ -1,6 +1,6 @@
 //Profile Age Update
   //Update Age in years, months and days
-  var birthDate=new Date("December 7, 1987"); //my birthday
+  var birthDate=new Date("December 7, 1988"); //my birthday
   var yearMonthDays=calculateAgeInYMD(birthDate); //array with number of years months days
   $(".years").text(yearMonthDays[0]);
   $(".months").text(yearMonthDays[1]);
@@ -48,10 +48,7 @@
 
 
 
-
-
-
-// Profile Buttons on click behaviour
+// Profile Buttons on click behaviour: change image when button is clicked
   $(".profile-button").on("click", function(event) {
 
     var buttonPressed=$(event.currentTarget);//get the pressed button
@@ -99,3 +96,47 @@
       default: $(".profile-img").attr("src", "images/Yo_formal.jpg");
     }
   }
+
+
+// Experiences Buttons on click behaviour: collapse text description
+  var btnUp_edu=false;
+  var btnUp_cert=false;
+  var btnUp_work=false;
+  $("div.education button").on("click", function(event){
+    $("div.education .title-experience").toggle();
+    btnUp_edu=!btnUp_edu;
+    changeButtonImage("div.education button img", btnUp_edu);
+  });
+
+  $("div.certification button").on("click", function(event){
+    $("div.certification .title-experience").toggle();
+    btnUp_cert=!btnUp_cert;
+    changeButtonImage("div.certification button img", btnUp_cert);
+  });
+
+  $("div.workexperience button").on("click", function(event){
+    $("div.workexperience .title-experience").toggle();
+    btnUp_work=!btnUp_work;
+    changeButtonImage("div.workexperience button img", btnUp_work);
+  });
+
+  function changeButtonImage(aClass, botonState){
+    if(botonState){
+      $(aClass).attr("src", "https://img.icons8.com/material-rounded/16/000000/chevron-up.png");
+    }
+    else{
+      $(aClass).attr("src", "https://img.icons8.com/material-rounded/16/000000/chevron-down.png");
+    }
+  }
+
+
+//Skills section behaviour: change background color when mouse passes over the skills
+  $("ul.no-bullets li").mouseover(function(event){
+    var liSelected=$(event.currentTarget);//get the current list element
+    liSelected.css("background-color", "#66bfbf3d");
+  });
+
+  $("ul.no-bullets li").mouseout(function(event){
+    var liSelected=$(event.currentTarget);//get the current list element
+    liSelected.css("background-color", "inherit");
+  });
