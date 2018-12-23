@@ -174,12 +174,13 @@ margin:0 10px 15px;
 }
 
 .experience-details{
-  display: inline-block;
+  display: block;
   margin-top:6px;
   color: #22A39F;
   font-size: 0.9rem;
   font-style: normal;
 }
+
 
 #experiences button {
     background-color: Transparent;
@@ -259,7 +260,7 @@ a{
 
 .hidden { display: none; }
 
-@media (max-width: 600px){
+@media(max-width: 880px){
 
   .navbar  { left: 0px; width: 100%; }
 	.navbar .nav > li { height: 60px; }
@@ -271,6 +272,10 @@ a{
 
 
 	#profile .row * { text-align: center; }
+
+  span.seperator{display:none;}
+
+  span.link{display: block;}
 }
 
 
