@@ -92,7 +92,6 @@
         $(".profile-img").attr("src", "images/scuba.jpg");
       break;
 
-
       default: $(".profile-img").attr("src", "images/Yo_formal.jpg");
     }
   }
@@ -140,3 +139,50 @@
     var liSelected=$(event.currentTarget);//get the current list element
     liSelected.css("background-color", "inherit");
   });
+
+
+//scrollspy behaviour
+$("body").scrollspy({
+    target: "#navbar-example",
+    offset:50
+});
+
+
+//Navbar Sticky behaviour
+window.onscroll = function() {myFunction()};
+var navbar = document.getElementById("navbar-example");
+var sticky = navbar.offsetTop;
+
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+///Nav behaviour
+applyNavigationFixForPhone();
+function applyNavigationFixForPhone()
+{
+	$('.navbar li a').click(function(event)
+	{
+		$('.navbar-collapse').removeClass('in').addClass('collapse');
+	});
+}
+
+
+
+
+
+
+
+//video on-click behaviour:expand
+$("figure.effect").on("click", function(event){
+  var currentVideo=$(event.currentTarget);
+// -webkit-transform: scale(2,2);
+  console.log(event.currentTarget);
+  $("currentVideo img").scale(4,4);
+
+});

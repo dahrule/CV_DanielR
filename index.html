@@ -1,4 +1,6 @@
-<DOCTYPE html>
+<!-- web design inspiration from http://www.pascalvangemert.nl/#/profile -->
+
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta name="viewport" content="initial-scale=1">
@@ -51,10 +53,32 @@
             </ul>
         </div>
     </nav> -->
+    <!-- Navbar -->
+    <nav id="navbar-example" class="navbar navbar-default" role="navigation">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
 
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse show navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav ml-auto">
+              <li  class="active"><a href="#profile">Profile</a></li>
+              <li><a href="#experiences">Experiences</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+    </nav>
     <!-- Home -->
     <section id="home">
-      <h3 class="brand"><strong>DANIEL RUIZ | CV</strong></h3>
+      <!-- <h3 class="brand"><strong>DANIEL RUIZ | CV</strong></h3> -->
       <!-- <img class="brand-logo" src="images/favicon.ico" alt="">DANIEL</img> -->
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000">
           <ol class="carousel-indicators">
@@ -75,9 +99,7 @@
             <div class="carousel-item">
               <img class= "d-block w-100" src="images/diving.jpg" alt="Second slide">
             </div>
-            <!-- <div class="carousel-item">
-              <img class="d-block w-100" src="images/diving.jpg" alt="Third slide">
-            </div> -->
+
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -89,34 +111,11 @@
           </a>
         </div>
     </section>
-    <nav class="navbar navbar-default fixed" id="navbar-example" role="navigation">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-          </div>
-
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#home">Home</a></li>
-              <li><a href="#profile">Profile</a></li>
-              <li><a href="#experiences">Experiences</a></li>
-              <li><a href="#skills">Skills</a></li>
-                        <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div><!-- /.navbar-collapse -->
-        </nav>
 
     <!-- Profile -->
     <section id="profile">
       <h2>Profile</h2>
-      <p class="lead">I´m a programmer & nature enthusiast</p>
+      <p class="lead">I´m a programmer, biologist & outdoors enthusiast</p>
       <div class="container-fluid">
         <hr>
         <div class="row">
@@ -206,7 +205,7 @@
                 <span class="hidden title-experience">
                   The education gave me a comprehensive vision of the broad field of biological sciences and helped me develop analytical thinking.
                   I gained practical experience in data processing and analysis using scripting languages; building an evaluating simple mathematical models of biological phenomena;
-                  climbing trees using rappel equipment; scuba diving and coral reef sampling techniques; and in applying standard techniques used in a molecular biology laboratory.
+                  climbing trees using rappel equipment; scuba diving; using coral reef sampling techniques; and in applying standard techniques used in a molecular biology laboratory.
                   <br><span class="attachment-experience"><strong>Thesis (forest hidrology):</strong> "Vertical profile of air temperature and relative humidity inside the canopy of a pine-oak forest south of Cuitzeo basin."
                   <br>My project was about characterizing microclimate variables along the height of a pine-oak forest canopy.
                     To achieve this, an improvised datalogger system with a network of vertical distributed sensors was designed and built to be deployed inside the forest. The latter required learning tree
@@ -274,7 +273,7 @@
                   <!-- <span class="seperator">|</span>
                   <span class="link">
                     <span class="fas fa-link"></span>
-                    <a href="https://www.nottingham.ac.uk/" target="_blank">https://www.nottingham.ac.uk/</a> -->
+                    <a href="" target="_blank">weblink here</a> -->
   					      </span>
                 </span>
               </p>
@@ -520,7 +519,7 @@
                 <span class="ability-score">⬛⬛⬜⬜⬜</span>
               </li>
               <li>
-                <span class="ability-title">Javascript</span>
+                <span class="ability-title">Javascript/jQuery</span>
                 <span class="ability-score">⬛⬛⬜⬜⬜</span>
               </li>
               <li>
@@ -528,7 +527,7 @@
                 <span class="ability-score">⬛⬛⬛⬜⬜ </span>
               </li>
               <li>
-                <span class="ability-title">CSS
+                <span class="ability-title">CSS/Bootstrap
                 <span class="ability-score">⬛⬛⬛⬜⬜ </span>
               </li>
               <li>
@@ -556,7 +555,7 @@
                 <span class="ability-score">⚫⚫⚫⚫⚫</span>
               </li>
               <li>
-                <span class="ability-title">English (common use)</span>
+                <span class="ability-title">English (advanced)</span>
                 <span class="ability-score">⚫⚫⚫⚫⚫</span>
               </li>
             </ul>
@@ -580,10 +579,38 @@
     <!-- Projects -->
     <section id="projects">
       <h2>Projects</h2>
-        <div class="container-fluid">
-          <hr>
+      <div class="container-fluid">
+        <hr>
+        <div class="row">
+          <div class="col-md-6 col-sm-12 col-xs-12">
+              <figure class="effect">
+                <img src="images/vr-diver.jpg" alt="Mals">
+                <figcaption>
+                      <h3>VR Diver</h3>
+                      <p>Control mechanics for a Scuba diving VR game prototype on Oculus Rift.</p>
+                      <p><strong>Tags:</strong>Unreal engine, Blueprints, virtual reality</p>
 
+                </figcaption>
+              </figure>
+          </div>
+          <div class="col-md-6 col-sm-12 col-xs-12">
+              <figure class="effect">
+                <img src="images/simon-game.jpg" alt="Mals">
+                <figcaption>
+                      <h3>Simon game</h3>
+                      <p>Simple web version of the memory skill game: Simon.</p>
+                      <p><strong>Tags:</strong>HTML, Javascript, JQuery</p>
+                      <a href="simon-game/game-index.html" target="_blank">View more</a>
+                      <span class="icon">
+                        <img src="https://img.icons8.com/color/48/000000/circled-play.png">
+                        <span class="glyphicon glyphicon-new-window"></span>
+
+                      </span>
+                </figcaption>
+              </figure>
+          </div>
         </div>
+      </div>
     </section>
 
 
@@ -609,13 +636,17 @@
 
 
 
-    <!-- //jQuery & javascript -->
+    <!-- //jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- //scrollspy plugin -->
+    <script src="scrollspy.js" charset="utf-8"></script>
+    <!-- Javascript -->
     <script src="index.js" charset="utf-8"></script>
 
     <!-- Bootstrap:carousel-interactivity -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
   </body>
 </html>

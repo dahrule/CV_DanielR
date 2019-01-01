@@ -1,16 +1,217 @@
+a{
+  color: #22A39F;
+}
+
+a.scroll-down{
+  width: 110px;
+  height: 80px;
+  background-color: #222222;
+  text-align: center;
+  display: block;
+  position: absolute;
+  right: 5%;
+  top: 18%;
+}
+
+.ability-title{
+
+}
+
+.ability-score{
+  float: right;
+}
+
+.attachment-experience{
+  font-size: 0.9rem;
+  font-style:italic;
+}
+
+body{
+  position: relative;
+}
+
+.brand-logo{
+  margin-bottom: 5px;
+  margin-right: 2px;
+
+}
+
+.btn {
+ background: #11CDD4;
+ background-image: -webkit-linear-gradient(top, #11CDD4, #11999D);
+ background-image: -moz-linear-gradient(top, #11CDD4, #11999D);
+ background-image: -ms-linear-gradient(top, #11CDD4, #11999D);
+ background-image: -o-linear-gradient(top, #11CDD4, #11999D);
+ background-image: linear-gradient(to bottom, #11CDD4, #11999D);
+ -webkit-border-radius: 8;
+ -moz-border-radius: 8;
+ border-radius: 8px;
+ font-family: 'Montserrat', sans-serif;
+ color: #ffffff;
+ font-size: 20px;
+ padding: 10px 20px 10px 20px;
+ text-decoration: none;
+}
+
+.btn:hover {
+ background: #30E3CB;
+ background-image: -webkit-linear-gradient(top, #30E3CB, #2BC4AD);
+ background-image: -moz-linear-gradient(top, #30E3CB, #2BC4AD);
+ background-image: -ms-linear-gradient(top, #30E3CB, #2BC4AD);
+ background-image: -o-linear-gradient(top, #30E3CB, #2BC4AD);
+ background-image: linear-gradient(to bottom, #30E3CB, #2BC4AD);
+ text-decoration: none;
+}
+
+.car-img{
+  width: auto;
+  height: auto;
+
+}
+
+.carousel-inner{
+  /* width:300px;
+  height:150px; */
+}
+
+.carousel-item{}
+
+.container-fluid{
+  padding:2% 25% 3% 25%;
+}
+
+.copyright{
+  font-style: italic;
+  color:#22A39F;
+  font-size: 1rem;
+  margin-top:20px;
+}
+
+#contact{
+  background-color: #434242;
+  text-align: center;
+  padding:0 0 10px 0;
+}
+
+.contact-h2{
+  color: white;
+  margin-bottom: 40px;
+}
+
+.col-md-4{
+  padding:0 15px;
+}
+
+.details{
+  margin:0;
+}
+
+.digital{
+  font-family: 'Orbitron', sans-serif;
+}
+
+#experiences{
+  background-color: #f9eea3;
+
+}
+
+#experiences button {
+    background-color: Transparent;
+    border: none;
+}
+
+.experience-details{
+  display: block;
+  margin-top:6px;
+  color: #22A39F;
+  font-size: 0.9rem;
+  font-style: normal;
+}
+
+figure.effect {
+	background: #22A39F;
+	color: #FFF;
+}
+
+figure.effect img,video {
+	width: -webkit-calc(100% + 20px);
+	width: calc(100% + 20px);
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-10px,0,0);
+	transform: translate3d(-10px,0,0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+figure.effect:hover img {
+	opacity: 0.2;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect figcaption {
+	text-align: left;
+}
+
+figure.effect h3 {
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 20px;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect:hover h3 {
+	opacity: 1;
+}
+
+figure.effect h3::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: #fff;
+	content: '';
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(-100%,0,0);
+	transform: translate3d(-100%,0,0);
+}
+
+figure.effect:hover h3::after {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect p {
+	padding-top: 10px;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(100%,0,0);
+	transform: translate3d(100%,0,0);
+}
+
+figure.effect:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+footer{
+  background-color: #434242;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
 h2{
   text-align:center;
   margin-top:30px;
   font-size: 2.5rem;
 }
-
-.lead{
-  text-align: center;
-  padding-top: 10px;
-  margin: 0 ;
-}
-
-
 
 h3{
   margin:20px 0;
@@ -28,59 +229,94 @@ h4{
   font-size: 17px;
   font-weight: 700;
   margin-bottom: 10px;
-
 }
 
-section{
-  padding-top:30px;
-}
+.hidden { display: none; }
 
-footer{
-  background-color: #434242;
-  text-align: center;
-  padding-bottom: 30px;
-}
-
-.social-icon{
- margin: auto 5px;
-}
-
-.copyright{
-  font-style: italic;
-  color:#22A39F;
-  font-size: 1rem;
-  margin-top:20px;
-}
 #home{
   text-align:center;
   padding-bottom:100px;
   background-color:black;
 }
 
-/* @media {
-  #profile .col-md-4{
-    text-align: center;
-  }
-} */
-
-.brand-logo{
-  margin-bottom: 5px;
-  margin-right: 2px;
-
-}
-.car-img
-{
-  width: auto;
-  height: auto;
-
-}
-
-.container-fluid{
-  padding:2% 25% 3% 25%;
+.interests-container{
+  margin:80px auto  auto 30px;
 }
 
 .interest-img{
-margin:0 10px 15px;
+  margin:0 10px 15px;
+}
+
+.lead{
+  text-align: center;
+  padding-top: 10px;
+  margin: 0 ;
+}
+
+#navbar {
+  overflow:visible;
+  /* background-color: #333; */
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.navbar, .scroll-down{border: 0px; background-color: #222222; position: absolute; top: 835px; right: 5%; width: 110px; z-index: 999;}
+.navbar, .navbar-collapse {padding: 0px;max-height: none;}
+.navbar-header{display: none;}
+/* .navbar, .navbar-nav { float: none; } */
+/* .navbar-nav { margin: 0px; } */
+/* .navbar .nav > li { display: block; float: none; height: 80px; } */
+.navbar .nav > li a { display: block;  height: 80px; text-align: center; padding-top: 30px; font-weight: 600; color: #FFFFFF; }
+/* .navbar .nav > li a:hover, .navbar .nav > li a:focus { color: #999999; } */
+.navbar-default, .navbar-nav > .active > a, .navbar-default, .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus { background: #22A39F; color: #FFFFFF; }
+.navbar-default, .navbar-toggler:hover, .icon-bar,
+.navbar-default, .navbar-toggler:focus, .icon-bar { background: #222222; }
+
+@media(max-width: 880px){
+
+	.navbar { position: absolute; top: 450px; right: 0%; width: 100%;}
+  .navbar-header{display: block;}
+  .sticky {
+    position: fixed;
+    top: 0;
+  }
+
+  /* .navbar .nav > li { height: 60px; }
+  .navbar .nav > li a { height: 60px; text-align: center; padding-top: 20px; font-weight: 600; color: #FFFFFF; } */
+
+  .fixed .navbar { top: 0px; }
+
+
+
+	.container-fluid { padding: 60px 20px; min-width: 280px; }
+
+	#profile .row * { text-align: center; }
+
+  span.seperator{display:none;}
+
+  span.link{display: block;}
+}
+
+
+
+.no-bullets{
+  list-style-type: none;
+  /* margin: 0px; */
+  padding: 0px;
+  margin: 0px;
+}
+
+.oculus{
+  background-image: url("images/icons8-oculus-rift-filled-50.png");
 }
 
 .profile-button{
@@ -90,52 +326,60 @@ margin:0 10px 15px;
   height:60px;
 }
 
-.profile-button:hover{
-  border-top:5px;
+/* #projects .row { margin: 0px; } // bootstrap 3.1- hack */
+#projects .row > div { margin-bottom: 30px; }
+#projects figure { position: relative; overflow: hidden; height: auto; }
+#projects figure h3 { color: #FFF; font-weight: 600; margin: 0; }
+#projects figure p > strong { width: 60px; display: inline-block; margin: 0px; }
+#projects figure img { width: 110%; height: 100%;}
+
+#projects figure figcaption {
+    padding: 20px 30px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
 }
+#projects figure a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+}
+#projects figure .icon {
+	background: #22A39F;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 48px;
+	height: 48px;
+}
+#projects figure .icon span {
+	font-size: 18px;
+	line-height: 18px;
+	padding: 15px;
+}
+
 
 .pressed{
   border-top:5px;
   background-color:#66BFBF;
 }
 
-
- .btn {
-  background: #11CDD4;
-  background-image: -webkit-linear-gradient(top, #11CDD4, #11999D);
-  background-image: -moz-linear-gradient(top, #11CDD4, #11999D);
-  background-image: -ms-linear-gradient(top, #11CDD4, #11999D);
-  background-image: -o-linear-gradient(top, #11CDD4, #11999D);
-  background-image: linear-gradient(to bottom, #11CDD4, #11999D);
-  -webkit-border-radius: 8;
-  -moz-border-radius: 8;
-  border-radius: 8px;
-  font-family: 'Montserrat', sans-serif;
-  color: #ffffff;
-  font-size: 20px;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
+#projects{
+  background-color: #f9eea3;
 }
 
-.btn:hover {
-  background: #30E3CB;
-  background-image: -webkit-linear-gradient(top, #30E3CB, #2BC4AD);
-  background-image: -moz-linear-gradient(top, #30E3CB, #2BC4AD);
-  background-image: -ms-linear-gradient(top, #30E3CB, #2BC4AD);
-  background-image: -o-linear-gradient(top, #30E3CB, #2BC4AD);
-  background-image: linear-gradient(to bottom, #30E3CB, #2BC4AD);
-  text-decoration: none;
+.profile-button:hover{
+  border-top:5px;
 }
-
-
-#profile{
-
-}
-
-.digital{
-  font-family: 'Orbitron', sans-serif;
-}
-
 
 .profile-img{
   border-radius: 50%;
@@ -144,56 +388,34 @@ margin:0 10px 15px;
   height:inherit;
 }
 
-.interests-container{
-  margin:80px auto  auto 30px;
-}
-
-.carousel-inner{
-  /* width:300px;
-  height:150px; */
-}
-.carousel-item{
-
-}
-
-#experiences{
-  background-color: #f9eea3;
-
-}
 .row{
   margin-bottom: 20px;
 }
 
+section{
+  padding-top:30px;
+}
+
+.social-icon{
+ margin: auto 5px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 5%;
+  /* width: 110px; */
+}
+
+/* .sticky + .content {
+  padding-top: 60px;
+} */
+
 .title-experience{
-  display: block;
+  display: none;
+  padding-top: 10px;
 }
 
-.attachment-experience{
-  font-size: 0.9rem;
-  font-style:italic;
-}
-
-.experience-details{
-  display: block;
-  margin-top:6px;
-  color: #22A39F;
-  font-size: 0.9rem;
-  font-style: normal;
-}
-
-
-#experiences button {
-    background-color: Transparent;
-    border: none;
-}
-
-.details{
-  margin:0;
-}
-
-.oculus{
-  background-image: url("images/icons8-oculus-rift-filled-50.png");
-}
  .vr-btn{
 
   outline: none;
@@ -211,88 +433,3 @@ margin:0 10px 15px;
   text-align: center;
   /* margin: 10px; */
  }
-.title-experience{
-  padding-top: 10px;
-}
-
-.col-md-4{
-  padding:0 15px;
-}
-
-a{
-  color: #22A39F;
-}
-
-#skills{
-
-}
-
-.no-bullets{
-  list-style-type: none;
-  /* margin: 0px; */
-  padding: 0px;
-  margin: 0px;
-}
-
-.ability-title{
-
-}
-
-.ability-score{
-  float: right;
-}
-
-#projects{
-  background-color: #f9eea3;
-  height:500px;
-}
-
-#contact{
-  background-color: #434242;
-  text-align: center;
-  padding:0 0 10px 0;
-}
-
-.contact-h2{
-  color: white;
-  margin-bottom: 40px;
-}
-
-.hidden { display: none; }
-
-@media(max-width: 880px){
-
-  .navbar  { left: 0px; width: 100%; }
-	.navbar .nav > li { height: 60px; }
-	.navbar .nav > li a { height: 60px; text-align: center; padding-top: 20px; font-weight: 600; color: #FFFFFF; }
-
-	.fixed .navbar { top: 0px; }
-
-	.container { padding: 60px 20px; min-width: 280px; }
-
-
-	#profile .row * { text-align: center; }
-
-  span.seperator{display:none;}
-
-  span.link{display: block;}
-}
-
-
-
-.navbar  { border: 0px; background-color: #222222; position: absolute; top: 100%; right: 5%; width: 110px; z-index: 999; }
-.navbar, .navbar-collapse {padding: 0px;max-height: none;}
-.navbar, .navbar-nav { float: none; }
-.navbar-nav { margin: 0px; }
-.navbar .nav > li { display: block; float: none; height: 80px; }
-.navbar .nav > li a { display: block;  height: 80px; text-align: center; padding-top: 30px; font-weight: 600; color: #FFFFFF; }
-.navbar .nav > li a:hover, .navbar .nav > li a:focus { color: #999999; }
-.navbar-default, .navbar-nav > .active > a, .navbar-default, .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus { background: #22A39F; color: #FFFFFF; }
-.navbar-default, .navbar-toggle:hover, .icon-bar,
-.navbar-default, .navbar-toggle:focus, .icon-bar { background: #222222; }
-
-
-
-.fixed, .navbar  { position: fixed; top: 60px; }
-
-.jumbotron .scroll-down:hover .glyphicon { padding-top: 25px; }
