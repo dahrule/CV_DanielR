@@ -152,6 +152,7 @@ figure.effect:hover img {
 
 figure.effect figcaption {
 	text-align: left;
+  z-index: 0;
 }
 
 figure.effect h3 {
@@ -315,6 +316,10 @@ h4{
   margin: 0px;
 }
 
+ol.carousel-indicators{
+  z-index: 1;
+}
+
 .oculus{
   background-image: url("images/icons8-oculus-rift-filled-50.png");
 }
@@ -416,20 +421,44 @@ section{
   padding-top: 10px;
 }
 
- .vr-btn{
-
-  outline: none;
-  /* border: 10px solid #404B69; */
-  font-size: 2rem;
-  font-family: 'Arvo', cursive;
-  line-height: 2;
-  font-weight: 900;
-  /* color: #DA0463; */
-  /* text-shadow: 3px 0 #DBEDF3; */
-  border-radius: 15px;
-  /* display: inline-block; */
-  width: 100px;
-  height: 100px;
+.video-window{
+  width: 700px;
+  height:450px;
+  background-color: #0b0c0c;
+  z-index:1;
+  position: fixed;
+  top: 20%;
+  right: 25%;
   text-align: center;
-  /* margin: 10px; */
- }
+  border-radius: 2%;
+}
+
+.video-window button {
+  background-color: Transparent;
+  border: none;
+  display: inline-block;
+  margin-left: 90%;
+  margin-top: 10px;
+  width: 45px;
+  height: 45px;
+  bottom: 40%;
+  left: 80%;
+}
+
+.video-window button:hover{
+  background-color:#212529;
+  border-radius: 50%;
+
+}
+
+.video-window p{
+  color: white;
+  margin: 5px 20px;
+  font-size: 0.8rem;
+}
+
+video{
+  width: 95%;
+  height: 70%;
+  display: inline-block;
+}

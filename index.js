@@ -151,14 +151,17 @@ $("body").scrollspy({
 //Navbar Sticky behaviour
 window.onscroll = function() {myFunction()};
 var navbar = document.getElementById("navbar-example");
+var videoWindow=$("div.video-window");
 var sticky = navbar.offsetTop;
 
 
 function myFunction() {
   if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
+    navbar.classList.add("sticky");
+    videoWindow.addClass("sticky");
   } else {
     navbar.classList.remove("sticky");
+    videoWindow.removeClass("sticky");
   }
 }
 
@@ -173,16 +176,13 @@ function applyNavigationFixForPhone()
 }
 
 
+//Video Player behaviour. Must be generalized when more videosare added later.
+$("div.vrdiver").on("click", function(){
+    $("div.video-window").removeClass("hidden");
+    $("div.video-window video").get(0).load();//load video
+});
 
-
-
-
-
-//video on-click behaviour:expand
-$("figure.effect").on("click", function(event){
-  var currentVideo=$(event.currentTarget);
-// -webkit-transform: scale(2,2);
-  console.log(event.currentTarget);
-  $("currentVideo img").scale(4,4);
-
+$("div.video-window button").on("click", function(){
+  $("div.video-window video").get(0).pause();//pause video
+  $("div.video-window").addClass("hidden");
 });
