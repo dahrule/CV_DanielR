@@ -26,6 +26,10 @@ a.scroll-down{
   font-style:italic;
 }
 
+.attachment-experience a{
+  display: inline-block;
+}
+
 body{
   position: relative;
 }
@@ -399,6 +403,18 @@ ol.carousel-indicators{
 
 section{
   padding-top:30px;
+}
+
+.skills-games{
+  color:#0043ff;
+}
+
+.skills-web{
+  color:#00bb87;
+}
+
+.skills-data{
+  color: #bb5600;
 }
 
 .social-icon{

@@ -122,8 +122,9 @@
         <div class="row">
           <div class="col-md-4">
               <h3>About me</h3>
-          		<p>I'm a programmer, biologist and certified diver with knowledge on game engines, web development, database design, and data processing and analysis.
-                Whenever I am not on the computer, I can be found outdoors exploring nature. My main professional interest is to develop serious games and scientific visualizaitons using virtual reality. I delight in the process of creating virtual interactive worlds that can produce that feeling of exploration that I highly enjoy.
+          		<p>I'm a Jr. programmer with a background in biology. I'm a certified diver too. I have knowledge on <span class="skills-games">game engines</span>, <span class="skills-web">full stack web development</span>, and <span class="skills-data">data processing and analysis.</span>
+                Whenever I'm not on the computer, I´m outdoors exploring nature. My main professional interest is to develop serious games and scientific visualizations using virtual reality.
+                <!-- I delight in the process of creating virtual interactive worlds that can produce that feeling of exploration that I highly enjoy. -->
               </p>
             </div>
           <div class="col-md-4 text-center">
@@ -141,7 +142,7 @@
             </p>
           </div>
           <div class="col-md-4 text-center">
-            <h3>Interests</h3>
+            <h3>My passions</h3>
             <ul class="no-bullets">
             <li><button class="profile-button vr"><img class="interest-img" src="images\icons8-oculus-rift-filled-50.png" alt=""></button></li>
             <li><button class="profile-button cycling"><img class="interest-img" src="images\icons8-cycling-mountain-bike-filled-50.png" alt=""></button></li>
@@ -175,8 +176,11 @@
               <p>
                 <strong>Master (coursework) - Computer Science</strong>
                 <span class="hidden title-experience">
-                I pursued my interest in programming discovered during my bachelor’s degree. During the studies I gained a broad vision of the field of computer science. I also acquired practical experience on relational database design and data querying using SQL; web programming; object-oriented programming; the theory on systems and networks and basic management of Unix O.S. I focused my elective modules on games design and programming, computer graphics principles, and virtual reality technologies.
-                <br><span class="attachment-experience"><a href="#projects" target=""><strong>Dissertation (serious games):</strong></a>
+                The master's degree emphasized the development of technical skills in computing through courseworks.
+                I gained a broad vision of the field of computer science and its research methods. I also acquired practical experience on relational database design;
+                web development; object-oriented programming; the theory on systems and networks and basic management of Unix O.S. I focused my elective modules on games design and programming,
+                computer graphics principles, and virtual reality technologies.
+                <br><span class="attachment-experience"><a class="project vrdiver" href="#projects" target=""><strong>Dissertation (serious games):</strong></a>
                   "Qualitative evaluation of interaction techniques for a virtual underwater environment for simulation of scuba diving training and experiences."
                   <br>I designed, programmed and evaluated the control mechanics for a v.r. game that runs on Oculus Rift.  The prototype was conceived as a tool to improve the education of diving concepts and to review underwater rescue manoeuvres in an interactive and immersive manner.</span>
                 </span>
@@ -204,11 +208,14 @@
                 <strong>Bachelor - Biology</strong>
                 <span class="hidden title-experience">
                   The education gave me a comprehensive vision of the broad field of biological sciences and helped me develop analytical thinking. I gained experience working in a molecular biology laboratory, diving, applying coral reef sampling techniques, building an evaluating simple mathematical models, and in data processing and analysis using scripting languages.
-                  <br><span class="attachment-experience"><strong>Thesis (forest hidrology):</strong> "Vertical profile of air temperature and relative humidity inside the canopy of a pine-oak forest south of Cuitzeo basin."
-                  <br>My project was about characterizing microclimate variables along the height of a pine-oak forest canopy.
+                  <br>
+                  <span class="attachment-experience">
+                    <strong>Thesis (forest hidrology):</strong> "Vertical profile of air temperature and relative humidity inside the canopy of a pine-oak forest south of Cuitzeo basin."
+                    <a class="experience-details" href="files\DRL-BScThesis.pdf" target="_blank"><strong>Download</strong></a><br>
+                    My project was about characterizing microclimate variables along the height of a pine-oak forest canopy.
                     To achieve this, an improvised datalogger system with a network of vertical distributed sensors was designed and built to be deployed inside the forest. The latter required learning tree
-                    climbing techniques to access the canopy.</span> <a class="experience-details" href="files\DRL-BScThesis.pdf" target="_blank"><strong>Download</strong></a>
-                    <!-- <span></span> -->
+                    climbing techniques to access the canopy.
+                  </span>
                 </span>
                 <span class="experience-details">
                   <span class="fas fa-map-marker-alt"></span>
@@ -442,8 +449,7 @@
                 <strong>Thesis - Undergraduate Research Student in Forest Hidrology Projects</strong>
                 <span class="hidden title-experience">
                   In the school of biology at UMSNH, students are required to complete a research project in order to obtain the bachelor’s degree.<br>
-                  During this time, I earned experience programming Arduino microprocessors and scripts for data analysis using R. I also learned tree climbing techniques to access the canopy and to measure morphological attributes of pine trees. The latter was done as part of a colleague's research project done at the same time.
-
+                  During my bachelor research project, I gained experience programming Arduino microprocessors and scripts for data analysis using R. I also learned tree climbing techniques to access the canopy and to measure morphological attributes of pine trees.
                   <br>
                 </span>
                 <span class="experience-details">
@@ -609,14 +615,14 @@
       <div class="container-fluid">
         <hr>
         <div class="row">
-          <div class=" vrdiver col-md-6 col-sm-12 col-xs-12">
+          <div class="col-md-6 col-sm-12 col-xs-12">
               <figure class="effect">
                 <img src="images/vr-diver.jpg" alt="Mals">
                 <figcaption>
                       <h3>VR Diver</h3>
                       <p>Control mechanics for a Scuba diving VR game prototype on Oculus Rift.</p>
                       <p><strong>Tags:</strong>Unreal engine, Blueprints, virtual reality</p>
-                      <a href="#projects" target="">View more</a>
+                      <a class="project vrdiver" href="#projects" target="">View more</a>
 
                 </figcaption>
               </figure>
@@ -634,13 +640,25 @@
           </div>
         </div>
         <div class="row">
-          <div class="ghoulieman col-md-12 col-sm-12 col-xs-12">
+          <div class="col-md-6 col-sm-12 col-xs-12">
               <figure class="effect">
                 <img src="images/goblin.jpg" alt="Mals">
                 <figcaption>
                       <h3>Ghoulieman</h3>
-                      <p>Mobile game programmed to learn the Unity work flow.</p>
+                      <p>A platform game for mobile devices programmed as an exercise to learn Unity and C#.</p>
                       <p><strong>Tags:</strong>Unity, C#, mobile</p>
+                      <a class="project ghoulieman" href="#projects" target="">View more</a>
+                </figcaption>
+              </figure>
+          </div>
+          <div class="col-md-6 col-sm-12 col-xs-12">
+            To add masters courseworks: *python game, *traffic police database, *computer graphics
+              <figure class="effect">
+                <img src="" alt="">
+                <figcaption>
+                      <h3></h3>
+                      <p></p>
+                      <p><strong>Tags:</strong></p>
                       <a href="#projects" target="">View more</a>
                 </figcaption>
               </figure>
@@ -674,14 +692,14 @@
       <button type="button" name="button">
         <img src="https://img.icons8.com/ultraviolet/32/000000/multiply.png">
       </button>
-      <video muted autoplay loop controls>VR Diver short video
-        <source src="videos/VRDiver_video_short.mp4" type="video/mp4">
+      <video muted autoplay loop controls>
+        <source src="" type="video/mp4">
         <!-- <source src="videos/VRDiver_video_short.ogg" type="video/ogg"> -->
         Your browser does not support the video tag.
       </video>
-      <p>Video extract from the scuba diving vr game prototype (Oculus Rift) developed as part of my Masters dissertation.<br>
-         The player can control buoyancy while checking his dive computer, swim by waving his hands up and down, and grab objects.</p>
-    </div> -->
+       <p><!--text added through javascript code--></p> 
+
+    </div>
 
     <!-- //jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

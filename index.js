@@ -176,12 +176,44 @@ function applyNavigationFixForPhone()
 }
 
 
-//Video Player behaviour. Must be generalized when more videosare added later.
-$("div.vrdiver").on("click", function(){
-    $("div.video-window").removeClass("hidden");
-    $("div.video-window video").get(0).load();//load video
+//Video Player behaviour.
+$("a.project").on("click", function(){
+    var aClassList=$(this).prop("classList");
+    var videoName=aClassList[1];
+    console.log(videoName);
+    showVideo(videoName);
 });
 
+function showVideo(videoName){
+ ///Assign video source
+  switch(videoName){
+    case "vrdiver":
+    //set video source
+      $("div.video-window video").attr("src", "videos/" + videoName + ".mp4");
+    //add video caption
+      var caption="Video extract from the scuba diving vr game prototype (Oculus Rift) developed as part of my Masters dissertation." +
+       " The player can control buoyancy while checking his dive computer, swim by waving his hands up and down, and grab objects. The prototype was tested by divers.";
+      $("div.video-window p").text(caption);
+    break;
+
+    case "ghoulieman":
+    //set video source
+      $("div.video-window video").attr("src", "videos/" + videoName + ".mp4");
+      //add video caption
+      var caption="hola";
+      $("div.video-window p").text(caption);
+    break;
+  }
+
+//show video window
+  $("div.video-window").removeClass("hidden");
+//load video
+  $("div.video-window video").get(0).load();
+//mute video
+  $("div.video-window video").prop("muted", true);
+}
+
+//video window Close button behaviour
 $("div.video-window button").on("click", function(){
   $("div.video-window video").get(0).pause();//pause video
   $("div.video-window").addClass("hidden");
