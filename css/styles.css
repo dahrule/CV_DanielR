@@ -328,6 +328,8 @@ ol.carousel-indicators{
   background-image: url("images/icons8-oculus-rift-filled-50.png");
 }
 
+.pointer {cursor: context-menu;}
+
 .profile-button{
   margin-bottom: 10px;
   margin-right: 5px;
@@ -419,6 +421,11 @@ section{
 
 .social-icon{
  margin: auto 5px;
+}
+
+.subtitle{
+  font-style: italic;
+  font-weight: bold;
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
