@@ -3,6 +3,9 @@ updateAge();
 skillsHover();
 profileImageInteractivity();
 toogleExperienceDescription();
+scrollSpy();
+stickyNavbar();
+applyNavigationFixForPhone();
 
 
 //-------------------------------------------------------------------------------------------------------
@@ -13,47 +16,49 @@ function updateAge(){
   $(".years").text(yearMonthDays[0]);
   $(".months").text(yearMonthDays[1]);
   $(".days").text(yearMonthDays[2]);
+
+  //Calculates age in years, months and days
+  function calculateAgeInYMD(dateString) {
+
+      var nomOfDays=0;
+      var nomOfMonths=0;
+      var nomOfYears=0;
+
+      var yearsMonthsDays = new Array();
+
+    // get current date
+      var currentDate=new Date();
+
+    //get birthdate
+      var birthDate=new Date(dateString);
+
+    //find differences
+      nomOfDays = currentDate.getDate() - birthDate.getDate();
+      nomOfMonths = currentDate.getMonth() - birthDate.getMonth();
+      nomOfYears = currentDate.getFullYear() - birthDate.getFullYear();
+
+      if (nomOfDays < 0){
+        nomOfDays += daysInMonth(currentDate.getMonth()+1, currentDate.getFullYear());
+        nomOfMonths--;
+      }
+
+      if (nomOfMonths < 0){
+        nomOfMonths += 12;
+        nomOfYears--;
+      }
+
+      yearsMonthsDays=[nomOfYears, nomOfMonths, nomOfDays];
+      return yearsMonthsDays;
+
+    }
+
+  //Calculates number of days in a month of an specific year
+  function daysInMonth (month, year) {
+        return new Date(year, month, 0).getDate();
+    }
 }
 
-//Calculates age in years, months and days
-function calculateAgeInYMD(dateString) {
 
-    var nomOfDays=0;
-    var nomOfMonths=0;
-    var nomOfYears=0;
-
-    var yearsMonthsDays = new Array();
-
-  // get current date
-    var currentDate=new Date();
-
-  //get birthdate
-    var birthDate=new Date(dateString);
-
-  //find differences
-    nomOfDays = currentDate.getDate() - birthDate.getDate();
-    nomOfMonths = currentDate.getMonth() - birthDate.getMonth();
-    nomOfYears = currentDate.getFullYear() - birthDate.getFullYear();
-
-    if (nomOfDays < 0){
-      nomOfDays += daysInMonth(currentDate.getMonth()+1, currentDate.getFullYear());
-      nomOfMonths--;
-    }
-
-    if (nomOfMonths < 0){
-      nomOfMonths += 12;
-      nomOfYears--;
-    }
-
-    yearsMonthsDays=[nomOfYears, nomOfMonths, nomOfDays];
-    return yearsMonthsDays;
-
-  }
-
-//Calculates number of days in a month of an specific year
-function daysInMonth (month, year) {
-      return new Date(year, month, 0).getDate();
-  }
 
 
 //-------------------------------------------------------------------------------------------------------
@@ -73,10 +78,10 @@ function skillsHover() {
 //-------------------------------------------------------------------------------------------------------
 // Profile Buttons on click behaviour: change image when button is clicked
   function profileImageInteractivity(){
-    $(".profile-button").on("click", function(event) {
+    $(".profile-button").on("click", function() {
 
-    var buttonPressed=$(event.currentTarget);//get the pressed button
-    var buttonClass=this.classList;
+    var buttonPressed=$(this);//get the pressed button
+    var buttonClasses=buttonPressed.prop("classList");
 
     if(buttonPressed.hasClass("pressed")){
       $(".profile-img").attr("src", "images/Yo_formal.jpg");
@@ -86,7 +91,7 @@ function skillsHover() {
     else {
       resetButtons();
       buttonPressed.addClass("pressed");
-      setImage(buttonClass);
+      setImage(buttonClasses);
     }
   });
   }
@@ -95,10 +100,10 @@ function skillsHover() {
     $(".profile-button").removeClass("pressed");//removes class "pressed" from all buttons of class "profile-button"
   }
 
-  function setImage(buttonClass){
-    if (buttonClass[2]=="pressed"){$(".profile-img").attr("src", "images/Yo_formal.jpg");}
+  function setImage(buttonClasses){
+    if (buttonClasses[2]=="pressed"){$(".profile-img").attr("src", "images/Yo_formal.jpg");}
     //switch on the second class in the class list
-    switch(buttonClass[1]){
+    switch(buttonClasses[1]){
       case "vr":
         $(".profile-img").attr("src", "images/vr.jpg");
       break;
@@ -121,39 +126,42 @@ function skillsHover() {
 
 
 //-------------------------------------------------------------------------------------------------------
-//scrollspy behaviour
-$("body").scrollspy({
-    target: "#navbar-example",
-    offset:50
-});
+function scrollSpy(){
+  //scrollspy behaviour
+  $("body").scrollspy({
+      target: "#navbar-example",
+      offset:50
+  });
+}
 
+function stickyNavbar(){
+// Sticky behaviour. stops on top of page
+  window.onscroll = function() {myFunction()};
+  var navbar = document.getElementById("navbar-example");
+  var videoWindow=$("div.video-window");
+  var sticky = navbar.offsetTop;
 
-//Navbar Sticky behaviour
-window.onscroll = function() {myFunction()};
-var navbar = document.getElementById("navbar-example");
-var videoWindow=$("div.video-window");
-var sticky = navbar.offsetTop;
-
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky");
-    videoWindow.addClass("sticky");
-  } else {
-    navbar.classList.remove("sticky");
-    videoWindow.removeClass("sticky");
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky");
+      videoWindow.addClass("sticky");
+    } else {
+      navbar.classList.remove("sticky");
+      videoWindow.removeClass("sticky");
+    }
   }
 }
 
-///Nav behaviour
-applyNavigationFixForPhone();
-function applyNavigationFixForPhone()
-{
+function applyNavigationFixForPhone(){
 	$('.navbar li a').click(function(event)
 	{
 		$('.navbar-collapse').removeClass('in').addClass('collapse');
 	});
 }
+
+
+
+
 
 
 //-------------------------------------------------------------------------------------------------------
