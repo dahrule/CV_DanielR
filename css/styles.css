@@ -409,14 +409,17 @@ section{
 
 .skills-games{
   color:#0043ff;
+  font-style: italic;
 }
 
 .skills-web{
   color:#00bb87;
+  font-style: italic;
 }
 
 .skills-data{
   color: #bb5600;
+  font-style: italic;
 }
 
 .social-icon{
