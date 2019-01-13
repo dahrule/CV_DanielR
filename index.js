@@ -64,7 +64,7 @@ function updateAge(){
 //-------------------------------------------------------------------------------------------------------
 //Skills section behaviour: change background color when mouse passes over the skills
 function skillsHover() {
-  $("ul.no-bullets li").mouseenter(function(){
+  $("#skills li").mouseenter(function(){
     $( this ).fadeOut( 500 );
     $( this ).fadeIn( 0 );
     $( this ).css("background-color", "#66bfbf3d");
